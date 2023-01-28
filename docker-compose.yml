@@ -1,0 +1,16 @@
+version: "3.4"
+
+services:
+  db:
+    image: "mcr.microsoft.com/mssql/server"
+    user: root
+    ports:
+      - "2433:1433"
+    volumes:
+      - bmh-data:/var/opt/mssql/data
+    environment:
+      SA_PASSWORD: "Welkom123"
+      ACCEPT_EULA: "Y"
+
+volumes:
+  bmh-data:
