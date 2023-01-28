@@ -1,0 +1,6 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=12b7c014_002D3467_002D41a7_002Dab01_002D9af0097994cc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="OfferCalculatorReturnsNoOfferAvailable_When_Debt_Exceeds_Maximum" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::F0F31B40-9691-41C5-8C8F-0F98E54911CD::net6.0::BuyMyHouse.Tests.UnitTest1.OfferCalculatorReturnsNoOfferAvailable_When_Debt_Exceeds_Maximum&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
