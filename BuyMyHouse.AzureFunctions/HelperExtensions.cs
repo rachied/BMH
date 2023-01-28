@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace BuyMyCompany.AzureFunctions;
+namespace BuyMyHouse.AzureFunctions;
 
 public static class HelperExtensions
 {

@@ -1,7 +1,10 @@
-﻿namespace BuyMyHouse.Data.Entity;
+﻿using Dapper.Contrib.Extensions;
+
+namespace BuyMyHouse.Domain.Mortgages;
 
 public class MortgageApplication
 {
+    [Key]
     public Guid ApplicationId { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }

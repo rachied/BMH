@@ -5,11 +5,9 @@ using System.Threading.Tasks;
 using Azure.Storage.Queues;
 using BuyMyHouse.Data.Repository;
 using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
-using Microsoft.WindowsAzure.Storage.Queue;
 
-namespace BuyMyCompany.AzureFunctions;
+namespace BuyMyHouse.AzureFunctions;
 
 public class MortgageQueuerTimerTrigger
 {

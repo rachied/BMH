@@ -1,5 +1,5 @@
 ﻿using System.Data;
-using BuyMyHouse.Data.Entity;
+using BuyMyHouse.Domain.Mortgages;
 using Dapper;
 using Dapper.Contrib.Extensions;
 
@@ -30,5 +30,10 @@ public class MortgageApplicationRepository : IMortgageApplicationRepository
         var result = await _connection.QueryAsync<MortgageApplication>(query, new { Status = ApplicationStatus.Pending });
 
         return result.ToList();
+    }
+
+    public async Task UpdateApplication(MortgageApplication entity)
+    {
+        await _connection.UpdateAsync(entity);
     }
 }

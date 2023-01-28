@@ -1,4 +1,4 @@
-﻿using BuyMyHouse.Data.Entity;
+﻿using BuyMyHouse.Domain.Mortgages;
 
 namespace BuyMyHouse.Application.Dto;
 

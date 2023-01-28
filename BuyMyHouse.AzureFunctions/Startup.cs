@@ -3,11 +3,12 @@ using System.Data.SqlClient;
 using System.IO;
 using BuyMyHouse.Application.Service;
 using BuyMyHouse.Data.Repository;
+using BuyMyHouse.Domain.Mortgages;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-[assembly: FunctionsStartup(typeof(BuyMyCompany.AzureFunctions.Startup))]
-namespace BuyMyCompany.AzureFunctions;
+[assembly: FunctionsStartup(typeof(BuyMyHouse.AzureFunctions.Startup))]
+namespace BuyMyHouse.AzureFunctions;
 
 
 public class Startup : FunctionsStartup
@@ -19,6 +20,12 @@ public class Startup : FunctionsStartup
         builder.Services.AddTransient<IDbConnection>((sp) => new SqlConnection(config.GetConnectionString("DbConnection")));
         builder.Services.AddTransient<IMortgageApplicationRepository, MortgageApplicationRepository>();
         builder.Services.AddTransient<IMortgageApplicationService, MortgageApplicationService>();
+        
+        builder.Services.Configure<OfferCalculatorConfig>(options => config.GetSection("OfferCalculatorConfig").Bind(options));
+        
+        builder.Services.AddTransient<IMortgageOfferRepository, MortgageOfferRepository>();
+        builder.Services.AddTransient<IMortgageOfferService, MortgageOfferService>();
+        builder.Services.AddTransient<IMortgageOfferCalculator, MortgageOfferCalculator>();
         builder.Services.AddLogging();
     }
     

@@ -1,7 +1,6 @@
 ﻿using BuyMyHouse.Application.Dto;
 using BuyMyHouse.Application.Dto.Error;
 using BuyMyHouse.Application.Validation;
-using BuyMyHouse.Data.Entity;
 using BuyMyHouse.Data.Repository;
 using LanguageExt;
 

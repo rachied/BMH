@@ -8,16 +8,19 @@ public class MortgageApplicationRequestValidator : AbstractValidator<MortgageApp
     public MortgageApplicationRequestValidator()
     {
         RuleFor(x => x.Email)
+            .MaximumLength(128)
             .NotEmpty()
                 .WithMessage("Email address is required.")
             .EmailAddress()
                 .WithMessage("A valid email address is required.");
 
         RuleFor(x => x.FirstName)
+            .MaximumLength(128)
             .NotEmpty()
                 .WithMessage("First name is required.");
         
         RuleFor(x => x.LastName)
+            .MaximumLength(128)
             .NotEmpty()
                 .WithMessage("Last name is required.");
 

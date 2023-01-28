@@ -7,7 +7,7 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace BuyMyCompany.AzureFunctions;
+namespace BuyMyHouse.AzureFunctions;
 
 public class MortgageAppSubmissionHttpTrigger
 {

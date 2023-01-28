@@ -1,4 +1,4 @@
-﻿namespace BuyMyHouse.Data.Entity;
+﻿namespace BuyMyHouse.Domain.Mortgages;
 
 public enum ApplicationStatus
 {
